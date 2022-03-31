@@ -26,7 +26,7 @@ pipelines:
           outputResources:
             - name: lab2_bi_backapp_mvn
           integrations:
-            - name: artifactory_eu
+            - name: Artifactory
         execution:
           onStart:
             - ls -l ${res_lab2_src_code_backapp_mvn_resourcePath}/${trainingPath}/src/java
@@ -97,7 +97,7 @@ pipelines:
             - name: lab2_src_dockerfile_backapp_mvn
             - name: lab2_fs_backapp_mvn
           integrations:
-            - name: artifactory_eu
+            - name: Artifactory
         execution:
           onStart:
             - ls -la ${res_lab2_fs_backapp_mvn_resourcePath}/
@@ -121,7 +121,7 @@ pipelines:
           inputSteps:
             - name: lab2_build_backapp_mvn_docker
           integrations:
-            - name: artifactory_eu
+            - name: Artifactory
           outputResources:
             - name: lab2_bi_backapp_mvn_docker
         execution:
