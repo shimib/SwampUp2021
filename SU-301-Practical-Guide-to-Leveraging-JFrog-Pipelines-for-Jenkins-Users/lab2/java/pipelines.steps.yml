@@ -88,7 +88,7 @@ pipelines:
         configuration:
           affinityGroup: together
           dockerFileName: Dockerfile
-          dockerFileLocation: ${trainingPath}/lab2/java/
+          dockerFileLocation: ${trainingPath}/src/java/
           dockerImageName: ${dockerRepo}/urs-docker/backapp-mvn-docker
           dockerImageTag: ${runVarAppVersion}
           inputSteps:
