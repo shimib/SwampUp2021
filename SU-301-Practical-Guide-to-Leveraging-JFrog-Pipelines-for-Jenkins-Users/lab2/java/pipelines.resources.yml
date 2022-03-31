@@ -64,14 +64,3 @@ resources:
       sourceArtifactory: Artifactory
       buildName: {{ gitBranch }}_backapp_mvn_docker
       buildNumber: ${run_number}
-
-        
-  # Docker image in an Artifactory repository
-  - name: lab2_base_image
-    type: Image
-    configuration:
-      registry: Artifactory
-      sourceRepository: urs-docker 
-      imageName: artifactory-unified.soleng-us.jfrog.team/urs-docker/groovy
-      imageTag: jre16 
-      autoPull: true

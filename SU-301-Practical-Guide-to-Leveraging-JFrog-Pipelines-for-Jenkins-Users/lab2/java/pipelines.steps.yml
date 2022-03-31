@@ -96,8 +96,8 @@ pipelines:
           inputResources:
             - name: lab2_src_dockerfile_backapp_mvn
             - name: lab2_fs_backapp_mvn
-            - name: lab2_base_image
           integrations:
+            - name: lab2_docker_registry  # needs to be created pointing to urs-docker
             - name: Artifactory
         execution:
           onStart:
