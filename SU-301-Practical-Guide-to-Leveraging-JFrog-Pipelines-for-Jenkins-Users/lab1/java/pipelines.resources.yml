@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: shimi_github
-      path: cyan21/SwampUp2021
+      path: shimib/SwampUp2021
       branches:
         include: {{ gitBranch }}
       files:
