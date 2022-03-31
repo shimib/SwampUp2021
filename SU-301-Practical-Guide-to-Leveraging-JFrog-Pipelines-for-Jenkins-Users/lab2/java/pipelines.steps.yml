@@ -71,7 +71,7 @@ pipelines:
       environmentVariables:
         readOnly:
           trainingPath: SU-301-Practical-Guide-to-Leveraging-JFrog-Pipelines-for-Jenkins-Users
-          dockerRepo: swampup301.jfrog.io/urs-docker
+          dockerRepo: swampup303.jfrog.io/urs-docker
     steps:
       # need this step to export the appVersion for the Filespec Resource
       - name: lab2_export_variables
@@ -123,7 +123,6 @@ pipelines:
             - name: lab2_build_backapp_mvn_docker
           integrations:
             - name: Artifactory
-            - name: lab2_docker_registry
           outputResources:
             - name: lab2_bi_backapp_mvn_docker
         execution:
