@@ -1,4 +1,4 @@
-FROM swampup301.jfrog.io/urs-docker/groovy:jre16
+FROM artifactory-unified.soleng-us.jfrog.team/urs-docker/groovy:jre16
 
 RUN mkdir -p /home/groovy/webapp/
 COPY multi-module-application.jar /home/groovy/webapp/multi-module-application.jar

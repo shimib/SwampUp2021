@@ -2,8 +2,8 @@ resources:
   - name: lab2_src_code_backapp_mvn
     type: GitRepo
     configuration:
-      gitProvider: XXX_github
-      path: cyan21/SwampUp2021
+      gitProvider: shimi_github
+      path: shimib/SwampUp2021
       branches:
         include: {{ gitBranch }}
       files:
@@ -15,14 +15,14 @@ resources:
   - name: lab2_bi_backapp_mvn
     type: BuildInfo
     configuration:
-      sourceArtifactory: artifactory_eu
+      sourceArtifactory: Artifactory
       buildName: {{ gitBranch }}_backapp_mvn
       buildNumber: ${run_number}
     
   - name: lab2_bi_backapp_mvn_promoted
     type: BuildInfo
     configuration:
-      sourceArtifactory: artifactory_eu
+      sourceArtifactory: Artifactory
       buildName: {{ gitBranch }}_backapp_mvn
       buildNumber: ${run_number}
 
@@ -34,8 +34,8 @@ resources:
   - name: lab2_src_dockerfile_backapp_mvn
     type: GitRepo
     configuration:
-      gitProvider: XXX_github
-      path: cyan21/SwampUp2021
+      gitProvider: shimi_github
+      path: shimib/SwampUp2021
       branches:
         include: {{ gitBranch }}
       files:
@@ -47,20 +47,20 @@ resources:
   - name: lab2_fs_backapp_mvn
     type: FileSpec
     configuration:
-      sourceArtifactory: artifactory_eu
+      sourceArtifactory: Artifactory
       pattern: "urs-mvn/**/multi-module-application-${runVarAppVersion}.jar"
       flat: true
       
   - name: lab2_bi_backapp_mvn_docker
     type: BuildInfo
     configuration:
-      sourceArtifactory: artifactory_eu
+      sourceArtifactory: Artifactory
       buildName: {{ gitBranch }}_backapp_mvn_docker
       buildNumber: ${run_number}
 
   - name: lab2_bi_backapp_mvn_docker_promoted
     type: BuildInfo
     configuration:
-      sourceArtifactory: artifactory_eu
+      sourceArtifactory: Artifactory
       buildName: {{ gitBranch }}_backapp_mvn_docker
       buildNumber: ${run_number}
