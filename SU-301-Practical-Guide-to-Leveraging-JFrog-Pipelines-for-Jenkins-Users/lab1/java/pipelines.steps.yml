@@ -41,7 +41,7 @@ pipelines:
         configuration:
           failOnScan: false
           inputResources:
-            - name: lab1_bi_backapp_maven
+            - name: lab1_bi_backapp_mvn
               trigger: true
 
       - name: lab1_promote_bi_backapp_mvn
