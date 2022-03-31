@@ -123,6 +123,7 @@ pipelines:
             - name: lab2_build_backapp_mvn_docker
           integrations:
             - name: Artifactory
+            - name: lab2_docker_registry
           outputResources:
             - name: lab2_bi_backapp_mvn_docker
         execution:
